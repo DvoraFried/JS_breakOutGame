@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css?family=Assistant');
+
+*{
+ 	font-family: 'Assistant', sans-serif; 
+}
+
+.login, #user{
+  width: 10%;
+  position: absolute;
+  left: 20px;
+  top: 245px;
+}
+
+.login{
+  cursor: pointer;
+}
+
+#user{
+  font-size: 25px;
+  top: 250px;
+  left: 160px;
+  width: auto;  
+}
+
+body{
+  background-color: rgb(255, 204, 0);
+}
+
+.svgIndex{
+  width: 20px;
+  height: 20px;
+}
+
+.mainPage{
+  background-color: rgb(255, 204, 0);
+}
+
+header{
+  height: 250px;
+  text-align: center;
+  background-color: white;
+  padding-top: 3%;
+}
+
+.fourGames{
+  display: grid;
+  grid-template: repeat(2, auto) / repeat(2, auto);
+  grid-gap: 3%; 
+  margin: 15% 22%; 
+}
+
+.gameImeg .btnGame {
+  position: absolute;
+  top: 50%;
+  left: 50%; 
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%); 
+  background-color: white;
+  color: black;
+}
+
+.btnGame:hover{
+  background-color: rgb(255, 204, 0);
+  /* color: white; */
+  opacity: 0.3;
+  cursor: pointer;
+
+}
+
+.gameImeg{
+  position: relative;
+}
+
+footer{
+  background-color: rgb(33,33,33);
+  height: 150px;
+  padding: 1% 0% 1% 5%;
+}
+
+
+
+/* ====== */
+/* Log in */
+/* ====== */
+
+#formPage {
+  display: none;     
+  position: fixed;   
+  z-index: 1; 
+  left: 0;
+  top: 0;
+  width: 100%; 
+  height: 100%;  
+  overflow: auto;  
+  background-color: rgb(0,0,0); 
+  background-color: rgba(0,0,0,0.4);  
+  text-align: center;
+}  
+   
+.formContent {
+  background-color: #fefefe;
+  margin: 5% auto 15% auto; 
+  border: 1px solid #888;
+  width: 30%; 
+  height: 80%;
+  padding: 4%;
+}
+  
+.close {
+  position: relative;
+  color: #000;
+  font-size: 35px;
+  font-weight: bold;
+  float: right;
+}
+  
+.close:hover,
+.close:focus {
+  color: red;
+  cursor: pointer;
+}  
+
+input,
+.btn{
+  padding: 12px;
+  border: none;
+  border-radius: 4px; 
+  opacity: 0.85;
+  font-size: 17px;
+  line-height: 20px;
+  text-decoration: none; 
+  background-color: rgb(0,0,0,0.1);
+}  
+
+input:hover,
+.btn:hover {
+  opacity: 1;
+}
+
+input{
+   border: 0.5px solid rgba(0,0,0,0.6); 
+}
+
+
+.fb {
+   background-color: #3B5998;
+}
+
+.twitter {
+   background-color: #55ACEE;
+}
+
+.google {
+   background-color: #dd4b39;
+}
+
+.google, .twitter, .fb{
+   color: white;
+}
+
+.animate {
+    animation: animatezoom 0.6s
+  }
+    
+  @keyframes animatezoom {
+    from {transform: scale(0)} 
+    to {transform: scale(1)}
+  }
+
+.formContainer{
+   display: grid;
+   grid-template: repeat(1, auto) / repeat(1, auto);
+   grid-gap: 3%; 
+   margin-top: 20%; 
+} 
+
+hr {
+   border-top: 4px double rgba(0,0,0,0.3);
+   color: rgba(0,0,0,0.6);
+   overflow: visible;  
+   text-align: center;
+   height: 0px;  
+   width: 100%; 
+}
+
+hr:after {
+   background: #fff;
+   content: 'another option';
+   padding: 0 1px; 
+   position: relative; 
+   top: -14px;  
+}

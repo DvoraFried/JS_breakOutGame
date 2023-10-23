@@ -1,0 +1,128 @@
+
+
+canvas {
+    background: rgb(33, 33, 33);
+    display: block;
+    margin: 5% auto;
+    z-index: -1;
+}
+
+.logout, .home, .rules, #user, #btnProp{
+    position: absolute;
+    top: 245px;
+    width: 100px;
+    cursor: pointer;
+}
+
+#btnProp{
+    width: 120px;
+}
+
+
+#user{
+    z-index: -1;
+    right: 0%;
+    width: auto;
+
+}
+
+#massage{
+    color: white;
+    font-size: 40px;
+    position: absolute;
+    top: 70%;
+    left: 42%;
+    display: block;
+}
+
+.logout{
+    left: 20px;
+}
+
+.home{
+    left: 130px;
+}
+
+.rules{
+    left: 240px;    
+}
+
+#btnProp{
+    left: 350px;  
+    z-index: 1;
+}
+
+footer{
+    position: relative;
+    top: 70%;
+}
+
+#prop{
+  display: none;     
+  position: fixed;   
+  z-index: 1; 
+  left: 5%;
+  top: 39.5%;
+  bottom: 10%;
+  width: 15%;
+  height: 35%;
+  padding: 1%;
+  background-color: rgb(0,0,0,0.1);
+  text-align: center;
+}  
+
+
+
+.options{
+    cursor: pointer;
+    text-align: center;
+    border: 1px solid black;
+    margin: 2% 0%;
+    background-color: whitesmoke;
+}
+
+#blue{
+    background-color: rgb(0,91,171);
+}
+#green{
+    background-color: rgb(140,198,63);
+}
+#purple{
+    background-color: rgb(145,39,143);
+}
+#yellow{
+    background-color: rgb(255,221,0);
+}
+#red{
+    background-color: rgb(237,28,36);
+}
+
+
+#win, #gameOver{
+    z-index: 1;
+    display: none;
+    width: 610px;
+    height: 500px;
+    background-color: rgb(33, 33, 33);
+    margin: 5% auto;
+    text-align: center;
+    font-size: 50px;
+    color: white;
+}
+
+/* #gameOver{
+    font-size: 50px;
+    color: white;
+}
+
+#imgBingo{
+    display: none;
+} */
+
+
+
+
+
+
+
+
